@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const verifyToken = require('./validate_token');
-
 
 // Esquema del Animal
 const animalSchema = new mongoose.Schema({
