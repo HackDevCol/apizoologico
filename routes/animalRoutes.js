@@ -36,6 +36,13 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+//Consultar todos los animales
+router.get("/animals", verifyToken, (req, res) => {
+  animalSchema.find()
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
+
 // UPDATE: Actualizar un animal por su ID
 router.put("/:id", async (req, res) => {
   try {
