@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Animal = require("../model/Animal");
+const Animal = require("../models/Animal");
 
 // CREATE: Crear un nuevo animal
 router.post("/", async (req, res) => {
